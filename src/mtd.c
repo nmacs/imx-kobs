@@ -2142,6 +2142,7 @@ static int fill_fcb(struct mtd_data *md, FILE *fp)
 	b->m_u32PagesInFirmware2       = boot_stream_size_in_pages;
 
 	b->m_u32DBBTSearchAreaStartAddress = cfg->search_area_size_in_pages;
+	b->m_u32DISBBM                 = plat_config_data->m_u32EnDISBBM;
 	b->m_u32BadBlockMarkerByte     = geo->block_mark_byte_offset;
 	b->m_u32BadBlockMarkerStartBit = geo->block_mark_bit_offset;
 	b->m_u32BBMarkerPhysicalOffset = mtd_writesize(md);

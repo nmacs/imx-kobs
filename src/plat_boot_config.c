@@ -152,7 +152,7 @@ static platform_config mx7d_boot_config = {
 
 static platform_config mx6ul_boot_config = {
 	.m_u32RomVer = ROM_Version_5,
-	.m_u32EnDISBBM = 0,
+	.m_u32EnDISBBM = 1,
 	.m_u32EnBootStreamVerify = 0,
 	.m_u32UseNfcGeo = 0,
 	.m_u32UseMultiBootArea = 0,
